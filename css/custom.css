@@ -1,12 +1,14 @@
 body {
-    background: url('../img/bg.png') no-repeat fixed;
-	background-color: #1d1d1d;
+    background: #63888F url('../img/bg1-body.png') no-repeat scroll center top;
     color: #fff;
     font-family: 'Segoe UI', 'Open Sans', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
 }
 
+.container {
+    margin-top: 5px;
+}
 a, a:hover, a:active, a:focus {
     color: #fff;
     text-decoration: none;
@@ -81,13 +83,12 @@ nav {
 }
 
 .menu .active span {
-    background-color: #fff;
-    color: #000;
+    background-color: #222;
 }
 
 .menu a {
     color: #fff;
-	line-height: 33px;
+	line-height: 24px;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
@@ -96,8 +97,9 @@ nav {
 .menu a span {
 	position: relative;
 	display: inline-block;
-	padding: 0 14px;
-	background: #131313;
+	padding: 12px 20px;
+	background: #F26522;
+    font-size: 20px;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
@@ -115,7 +117,7 @@ nav {
 	left: 0;
 	width: 100%;
 	height: 100%;
-    padding: 0 14px;
+    padding: 12px 20px;
 	background: #fff;
     color: #000;
 	content: attr(data-hover);
@@ -139,8 +141,8 @@ nav {
 
 .csstransforms3d .menu a:hover span::before,
 .csstransforms3d .menu a:focus span::before {
-	background: #fff;	
-    color: #000;
+	background: #333;	
+    color: #FFF;
 }
 
 .wrap-content {
@@ -174,71 +176,34 @@ nav {
     background-color: #00a566;
 }
 
-.home .box-portfolio {
-    background-color: #8000b9;
+.home .box-calendar {
+    background-color: #66CCCC;
+    height: 404px;
+    margin-top: 4px;
+    overflow: hidden;
 }
 
 .home .box-education {
     background-color: #0079b9;
 }
 
-.home .box-experience {
-    background-color: #ff0058;
-}
-
 .home .box-contact {
     background-color: #b900a4;
 }
 
-.home .box-resume {
-    background-color: #3e3e3e;
-}
-
 /* Profile Photo -------------------------- */
 .profile-box {
-    background: url('../img/profile.jpg') no-repeat center center;
+    background: url('../img/profile_i.jpg') no-repeat center center;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-/* Profile Photo On Hover ----------------- */
+/* Profile Photo On Hover ----------------- 
 .profile-box:hover {
     background: url('../img/profile2.jpg') no-repeat center center;
 }
-
-.portfolio .big-box {
-    background: url('../img/zoom.png') no-repeat center 30%;
-    background-color: #000;
-    height: auto;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.portfolio .big-box:hover {
-    background: url('../img/zoom.png') no-repeat center center;
-    background-color: #000;
-}
-
-.portfolio .big-box:hover img {
-    opacity: 0.5;
-}
-
-.portfolio img {
-    width: 100%;
-    filter: url(filters.html#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.portfolio img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-}
+*/
 
 .box-text {
     padding: 15px 20px 15px 25px;
@@ -379,100 +344,6 @@ nav {
     margin-left: 35px;
 }
 
-.next {
-    position: relative;
-    top: -6px;
-    left: 98%;
-}
-
-.carousel-indicators {
-    top: -6px;
-    left: 95%;
-    width: auto;
-    margin-left: 0;
-    bottom: auto;
-}
-
-.carousel-indicators li, .carousel-indicators .active {
-    background-color: #fff;
-    border: 0;
-}
-
-.portfolio {
-    margin-top: -20px;
-}
-
-.dismiss {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: #fff;
-    padding: 5px 7px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.dismiss:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.modal-body {
-    padding: 0;
-}
-
-.progress {
-    height: 30px;
-    border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.progress-bar {
-    text-align: left;
-    padding: 0 15px;
-}
-
-.progress p {
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.progress p span {
-    float: right;
-}
-
-.progress .one {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
-.progress .two {
-    width: 85%;
-    background-color: rgb(87, 0, 162);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
-.progress .three {
-    width: 70%;
-    background-color: rgb(0, 69, 199);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
-.progress .four {
-    width: 60%;
-    background-color: rgb(0, 152, 41);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
-.progress .five {
-    width: 55%;
-    background-color: rgb(152, 0, 0);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
-}
-
 .icon-title {
     float: right;
 }
@@ -481,11 +352,6 @@ nav {
     z-index: 999;
 }
 
-.modal-box {
-    width: 100%;
-    margin-top: 4px;
-    overflow: hidden;
-}
 
 hr {
     border-top: 1px dotted rgba(255, 255, 255, 0.05);
